@@ -1,4 +1,7 @@
 {
+  "globals": {
+    "process": "readonly"
+  },
   "env": {
     "browser": true,
     "es2020": true
@@ -15,5 +18,10 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint"],
-  "rules": {}
+  "rules": {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "^_" }],
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  }
 }

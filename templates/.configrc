@@ -1,0 +1,17 @@
+{
+  "define": {
+    "__DEV__": false,
+    "__ISSUE__": ""
+  },
+  "extensions": [
+    ".tsx",
+    ".ts"
+  ],
+  "bundles": [
+    {
+      "entry": ".",
+      "external": []
+    }
+  ],
+  "output": "dist"
+}

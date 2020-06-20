@@ -4,9 +4,10 @@
 
 ## 计划
 
-- [ ] typescript
+- [x] typescript
 - [x] husky
 - [x] commitlint
 - [x] eslint
 - [x] prettier
-- [ ] rollup
+- [x] rollup
+- [ ] jest
