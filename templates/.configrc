@@ -5,12 +5,14 @@
   },
   "extensions": [
     ".tsx",
-    ".ts"
+    ".ts",
+    ".js",
+    ".json"
   ],
   "bundles": [
     {
       "entry": ".",
-      "external": []
+      "external": ["axios"]
     }
   ],
   "output": "dist"

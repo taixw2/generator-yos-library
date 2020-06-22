@@ -64,8 +64,10 @@ export default async function createBundler(options: Options, env: ENV) {
       plugins.commonjs(),
       plugins.nodeResolve({
         extensions: options.extensions,
+        preferBuiltins: false,
       }),
       plugins.typescript2(),
+      plugins.json(),
       env === ENV.PRODUCTION && plugins.terser.terser(),
     ],
   })

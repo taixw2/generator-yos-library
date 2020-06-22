@@ -15,3 +15,4 @@ config.bundles.reduce(async (p: Promise<unknown>, c) => {
     .then(() => createBundle({ ...config, bundle: c }, ENV.DEVELOPMENT))
     .then(() => createBundle({ ...config, bundle: c }, ENV.PRODUCTION))
 }, Promise.resolve())
+// .catch(console.error)
