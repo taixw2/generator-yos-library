@@ -1,6 +1,6 @@
-# {{name}}
+# <%= name %>
 
-> {{describe}}
+> <%= describe %>
 
 ## 计划
 
