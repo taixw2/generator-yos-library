@@ -1,6 +1,6 @@
-# generator-yos-library
+# {{name}}
 
-符合现代 Javascript 开发技术的 yeoman 生成器
+> {{describe}}
 
 ## 计划
 
