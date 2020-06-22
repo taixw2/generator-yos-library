@@ -1,21 +1,21 @@
-import Generator from 'yeoman-generator'
+const Generator = require("yeoman-generator");
 
-export default class extends Generator {
+module.exports = class extends Generator {
   constructor() {
-    super()
+    super();
   }
 
   async prompting() {
     return this.prompt([
       {
-        type: 'input',
-        name: 'title',
-        message: '输入你的项目名称',
+        type: "input",
+        name: "title",
+        message: "输入你的项目名称",
         default: this.appname,
       },
     ]).then((answers) => {
-      this.answers = answers
-    })
+      this.answers = answers;
+    });
   }
 
   writing() {
